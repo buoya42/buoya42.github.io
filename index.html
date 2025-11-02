@@ -31,6 +31,12 @@
     flex: 1; max-width: 1000px;
     margin: 0 auto; padding: 20px; box-sizing: border-box;
     display: none; padding-bottom: 100px;
+
+    /* Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   /* Loader */
   .loader-overlay {
@@ -77,27 +83,6 @@
         56.6% 87.42%,69% 82.91%,79.11% 74.43%,85.71% 63%,88% 50%) }
   }
   @keyframes l8-1 { to { rotate: 1turn; } }
-  /* Tiles styling */
-  .games-section {
-    display: grid; grid-template-columns: repeat(auto-fit,minmax(120px, 1fr));
-    gap: 20px; justify-items: center; margin: 15px 0;
-  }
-  .game-tile {
-    background: rgba(123, 44, 191, 0.85);
-    border: 2px solid #9d4edd;
-    border-radius: 10px;
-    width: 120px; height: 120px;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; color: #e0aaff; transition: 0.3s;
-  }
-  .game-tile:hover {
-    background: #5a189a; transform: translateY(-6px);
-    box-shadow: 0 6px 18px rgba(154, 77, 221, 0.6);
-  }
-  .game-tile img {
-    width: 60px; height: 60px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;
-    filter: drop-shadow(1px 1px 1px rgba(16, 0, 43, 0.6));
-  }
   /* Footer */
   .footer {
     position: fixed; left: 0; bottom: 0;
@@ -113,103 +98,11 @@
 <div class="loader-overlay"><div class="loader"></div></div>
 <div class="wrapper">
   <div class="content">
-    <h1 class="echo-font">Gamez for Fun</h1>
-    <h2>Welcome to my website!</h2>
-    <h2><a href="https://gamez-for-fun.github.io/StreamNest">StreamNest</a> - Watch Movies and Series</h2>
-    <h3>Enjoy all games below.</h3>
-
-    <!-- Minecraft -->
-    <hr>
-    <h3>Minecraft</h3>
-    <div class="games-section">
-      <a href="https://gamez-for-fun.github.io/minecraft/1.2.6/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.2.6">1.2.6</a>
-      <a href="https://gamez-for-fun.github.io/minecraft/1.3/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.3">1.3</a>
-      <a href="https://gamez-for-fun.github.io/minecraft/1.5.2/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.5.2">1.5.2</a>
-      <a href="https://gamez-for-fun.github.io/minecraft/1.8%20all/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.8 All">1.8 (All)</a>
-      <a href="https://gamez-for-fun.github.io/minecraft/1.8/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.8">1.8</a>
-      <a href="https://gamez-for-fun.github.io/minecraft/1.8%20international/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.8 Intl">1.8 Intl</a>
-      <a href="https://gamez-for-fun.github.io/minecraft/1.12/" class="game-tile"><img src="icons/minecraft.png" alt="Minecraft 1.12">1.12</a>
-    </div>
-
-    <!-- Famous Games -->
-    <hr>
-    <h3>Famous Games</h3>
-    <div class="games-section">
-      <a href="https://gamez-for-fun.github.io/chess" class="game-tile"><img src="icons/chess.png" alt="Chess">Chess</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/99-nights" class="game-tile"><img src="icons/99nights.png" alt="99 Nights Online">99 Nights Online</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/granny" class="game-tile"><img src="icons/granny.png" alt="Granny">Granny</a>
-      <a href="https://gamez-for-fun.github.io/fnf" class="game-tile"><img src="icons/fnf.png" alt="FNF">FNF</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/balatro" class="game-tile"><img src="icons/balatro.png" alt="Balatro">Balatro</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/x-trench-run" class="game-tile"><img src="icons/x-trench-run.png" alt="X-Trench Run">X-Trench Run</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/blocky-combat-swat" class="game-tile"><img src="icons/bcs.png" alt="Blocky Combat SWAT">Blocky Combat SWAT</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/bad-time-simulator/" class="game-tile"><img src="icons/sans.png" alt="Bad Time Simulator">Bad Time Simulator</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/ice-dodo" class="game-tile"><img src="icons/ice-dodo.png" alt="Ice Dodo">Ice Dodo</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/tunnel-rush-mania" class="game-tile"><img src="icons/tunnel-rush.png" alt="Tunnel Rush Mania">Tunnel Rush Mania</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/sandboxels" class="game-tile"><img src="icons/sandboxels.png" alt="Sandboxels">Sandboxels</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/slope" class="game-tile"><img src="icons/slope.png" alt="Slope">Slope</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/happy-wheels" class="game-tile"><img src="icons/happy-wheels.png" alt="Happy Wheels">Happy Wheels</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/tag" class="game-tile"><img src="icons/tag.png" alt="Tag">Tag</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/wordle" class="game-tile"><img src="icons/wordle.png" alt="Wordle">Wordle</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/gd" class="game-tile"><img src="icons/gd.png" alt="Geometry Dash">Geometry Dash</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/8-ball-pool" class="game-tile"><img src="icons/8ball.png" alt="8 Ball Pool">8 Ball Pool</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/snow-rider-3d" class="game-tile"><img src="icons/snowrider.png" alt="Snow Rider 3D">Snow Rider 3D</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/fnaf/1" class="game-tile"><img src="icons/fnaf.png" alt="FNaF 1">FNaF 1</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/fnaf/2" class="game-tile"><img src="icons/fnaf.png" alt="FNaF 2">FNaF 2</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/fnaf/3" class="game-tile"><img src="icons/fnaf.png" alt="FNaF 3">FNaF 3</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/fnaf/4" class="game-tile"><img src="icons/fnaf.png" alt="FNaF 4">FNaF 4</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/worldbox" class="game-tile"><img src="icons/worldbox.png" alt="WorldBox">WorldBox</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/bitlife" class="game-tile"><img src="icons/bitlife.png" alt="BitLife">BitLife</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/cookie-clicker" class="game-tile"><img src="icons/cookie-clicker.png" alt="Cookie Clicker">Cookie Clicker</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/isaac" class="game-tile"><img src="icons/isaac.png" alt="Binding of Isaac">Binding of Isaac</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/ovo" class="game-tile"><img src="icons/ovo.png" alt="OvO">OvO</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/pac-man" class="game-tile"><img src="icons/pacman.png" alt="Pac-Man">Pac-Man</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/alien-hominid" class="game-tile"><img src="icons/alien.png" alt="Alien Hominid">Alien Hominid</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/mario-bros" class="game-tile"><img src="icons/mario.png" alt="Mario Bros">Mario Bros</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/monkey-mart" class="game-tile"><img src="icons/monkeymart.png" alt="Monkey Mart">Monkey Mart</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/1v1-lol" class="game-tile"><img src="icons/1v1lol.png" alt="1v1 LOL">1v1 LOL</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/backrooms-3d" class="game-tile"><img src="icons/backrooms.png" alt="Backrooms 3D">Backrooms 3D</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/basket-random" class="game-tile"><img src="icons/basket.png" alt="Basket Random">Basket Random</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/boxel-rebound" class="game-tile"><img src="icons/boxel.png" alt="Boxel Rebound">Boxel Rebound</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/drive-mad" class="game-tile"><img src="icons/drive.png" alt="Drive Mad">Drive Mad</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/rooftop-snipers" class="game-tile"><img src="icons/rooftop.png" alt="Rooftop Snipers">Rooftop Snipers</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/terraria" class="game-tile"><img src="icons/terraria.png" alt="Terraria">Terraria</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/among-us" class="game-tile"><img src="icons/among-us.png" alt="Among Us">Among Us</a>
-<!--      <a href="https://gamez-for-fun.github.io/famous-games/papas" class="game-tile"><img src="icons/papas.png" alt="Papa's Games">Papa’s Games</a> -->
-      <a href="https://gamez-for-fun.github.io/famous-games/pokemon/1" class="game-tile"><img src="icons/pokemon.png" alt="Pokemon Part 1">Pokémon Part 1</a>
-      <a href="https://gamez-for-fun.github.io/famous-games/pokemon/2" class="game-tile"><img src="icons/pokemon.png" alt="Pokemon Part 2">Pokémon Part 2</a>
-    </div>
-
-    <hr><h3>Interesting Games</h3>
-    <div class="games-section">
-      <a href="https://gamez-for-fun.github.io/interesting-games/snekmek" class="game-tile"><img src="icons/snekmek.png" alt="SnekMek">SnekMek</a>
-      <a href="https://gamez-for-fun.github.io/interesting-games/fnaw" class="game-tile"><img src="icons/fnaw.png" alt="FNaW">FNaW</a>
-      <a href="https://gamez-for-fun.github.io/interesting-games/bloxors" class="game-tile"><img src="icons/bloxors.png" alt="Bloxors">Bloxors</a>
-      <a href="https://gamez-for-fun.github.io/interesting-games/dragon-maker" class="game-tile"><img src="icons/dragon-maker.png" alt="Dragon Maker">Dragon Maker</a>
-      <a href="https://gamez-for-fun.github.io/interesting-games/fairy-tail-vs-one-piece" class="game-tile"><img src="icons/fairy-tail-vs-one-piece.png" alt="Fairy Tail vs One Piece">Fairy Tail vs One Piece</a>
-    </div>
-
-    <hr><h3>Browser Hidden Games</h3>
-    <div class="games-section">
-      <a href="https://gamez-for-fun.github.io/browser-hidden-games/surf" class="game-tile"><img src="icons/surf.png" alt="Edge Surf">Edge Surf</a>
-      <a href="https://gamez-for-fun.github.io/browser-hidden-games/t-rex" class="game-tile"><img src="icons/t-rex.png" alt="Chrome T-Rex">Chrome T-Rex</a>
-    </div>
-
-    <hr><h3>Tools</h3>
-    <div class="games-section">
-      <a href="https://gamez-for-fun.github.io/tools/webbrowser" class="game-tile"><img src="icons/webbrowser.png" alt="Web Browser">Web Browser</a>
-      <a href="https://gamez-for-fun.github.io/tools/webcam" class="game-tile"><img src="icons/webcam.png" alt="Webcam">Webcam</a>
-      <a href="https://gamez-for-fun.github.io/tools/screenshot" class="game-tile"><img src="icons/screenshot.png" alt="Screenshot">Screenshot</a>
-      <a href="https://gamez-for-fun.github.io/tools/screen-recorder" class="game-tile"><img src="icons/screen-recorder.png" alt="Screen Recorder">Screen Recorder</a>
-      <a href="https://gamez-for-fun.github.io/tools/music-player" class="game-tile"><img src="icons/music-player.png" alt="Music Player">Music Player</a>
-    </div>
+      <h1>This is the outdated version. Instead, use our new page: <a href="https://gamez-for-fun.github.io">gamez-for-fun.github.io</a></h1>
   </div>
 
   <footer class="footer" id="site-footer">
-    <span id="time"></span>
-    <p>Made with 💙 by buoya and tested by Awitax.</p>
-    <p>Test our Image creation AI: <a href="/ai/image">Elliot Image</a></p>
-    <div data-tf-live="01K7WK4VEAFJ0FEF1XM1N08WB6"></div>
-    <script src="//embed.typeform.com/next/embed.js"></script>
+    <p><strong>Made with 💙 by buoya and tested by Awitax.</strong> But this is the outdated version. Instead, use our new page.</p>
   </footer>
 </div>
 
@@ -219,16 +112,6 @@
       $('.content').fadeIn(600);
     });
   }, 5000);
-
-  function updateTime() {
-    const now = new Date();
-    document.getElementById('time').textContent =
-      now.getHours().toString().padStart(2, '0') +
-      ':' +
-      now.getMinutes().toString().padStart(2, '0');
-  }
-  updateTime();
-  setInterval(updateTime, 1000);
 </script>
 </body>
 </html>
